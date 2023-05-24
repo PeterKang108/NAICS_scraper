@@ -42,5 +42,8 @@ class NaicsScraperItem(scrapy.Item):
     pass
 
 
-# class NaicsWebsiteItems(scrapy.Item):
-
+class NaicsWebsiteItems(scrapy.Item):
+    NAICS_Code = scrapy.Field()
+    Company_Name = scrapy.Field()
+    URL = scrapy.Field()
+    Raw_Text = scrapy.Field()
